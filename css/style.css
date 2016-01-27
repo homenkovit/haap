@@ -1,0 +1,561 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* font-family: "OpenSansRegular"; */
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+    src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"),
+    url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansLight"; */
+@font-face {
+    font-family: "OpenSansLight";
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+    src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"),
+    url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansItalic"; */
+@font-face {
+    font-family: "OpenSansItalic";
+    src: url("../fonts/OpenSansItalic/OpenSansItalic.eot");
+    src: url("../fonts/OpenSansItalic/OpenSansItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansItalic/OpenSansItalic.woff") format("woff"),
+    url("../fonts/OpenSansItalic/OpenSansItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansBold"; */
+@font-face {
+    font-family: "OpenSansBold";
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+    src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"),
+    url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansExtraBold"; */
+@font-face {
+    font-family: "OpenSansExtraBold";
+    src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+    src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"),
+    url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansExtraBoldItalic"; */
+@font-face {
+    font-family: "OpenSansExtraBoldItalic";
+    src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot");
+    src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.woff") format("woff"),
+    url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansBoldItalic"; */
+@font-face {
+    font-family: "OpenSansBoldItalic";
+    src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+    src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"),
+    url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansRegularItalic"; */
+@font-face {
+    font-family: "OpenSansRegularItalic";
+    src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot");
+    src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.woff") format("woff"),
+    url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansSemiBold"; */
+@font-face {
+    font-family: "OpenSansSemiBold";
+    src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+    src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"),
+    url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "OpenSansSemiBoldItalic"; */
+@font-face {
+    font-family: "OpenSansSemiBoldItalic";
+    src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot");
+    src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff") format("woff"),
+    url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    background-color: #fff;
+    width: 100%;
+    min-width: 1200px;
+}
+
+.section-wrap {
+    width: 1145px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.header {
+    width: 100%;
+    min-width: 1200px;
+    background: url(../img/header-bckg.png) center 0 no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.section-header__wrap {
+    width: 1145px;
+    height: 524px;
+    position: relative;
+    margin: auto;
+}
+
+.header-wrap {
+    width: 562px;
+    margin: auto;
+}
+
+.header__title {
+    font-family: "OpenSansBold";
+    color: #fffc20;
+    font-size: 33px;
+    text-transform: uppercase;
+    line-height: 45px;
+    padding-top: 30px;
+    padding-bottom: 35px; 
+}
+
+.header-list__title {
+    color: #ffffff;
+    font-size: 24px;
+    font-family: "OpenSansSemiBold";
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.header__list {
+    padding-left: 50px;
+}
+
+.header__list .header__item {
+    color: #ffffff;
+    font-family: "OpenSansLight";
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 20px;
+    padding-left: 52px;
+    position: relative;
+}
+
+.header__list .header__item i {
+    background-image: url(../img/list.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 29px;
+    height: 23px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.header__form {
+    width: 270px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+}
+
+.form__header {
+    position: relative;
+    height: 162px;
+    background-color: #ed174c;
+}
+
+.form__header:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 162px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 135px 0 135px;
+    border-color: #ed174c transparent transparent transparent;
+}
+
+.form__header p {
+    font-family: "OpenSansRegular";
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.text-wrap {
+    height: 100%;
+    width: 200px;
+    margin: auto;
+}
+
+.form input {
+    width: 100%;
+    font-size: 100%;
+    padding: 14px 10px;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+:focus::-webkit-input-placeholder {
+    line-height: 100px;
+    transition: line-height 0.5s ease;
+}
+:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
+:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
+:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+
+::-webkit-input-placeholder {
+    color: #a9a9a9;
+    font-family: "OpenSansRegular";
+    text-align: left;
+    line-height: 20px;
+    transition: line-height 0.5s ease;
+}
+::-moz-placeholder {
+    color: #a9a9a9;
+    font-family: "OpenSansRegular";
+    text-align: left;
+    line-height: 20px;  
+    transition: line-height 0.5s ease;
+}/* Firefox 19+ */
+:-moz-placeholder {
+    color: #a9a9a9;
+    font-family: "OpenSansRegular";
+    text-align: left;
+    line-height: 20px;  
+    transition: line-height 0.5s ease;
+}/* Firefox 18- */
+:-ms-input-placeholder {
+    color: #a9a9a9;
+    font-family: "OpenSansRegular";
+    text-align: left;
+    line-height: 20px;  
+    transition: line-height 0.5s ease;
+}
+.triangle-wrap {
+    padding-bottom: 50px;
+}
+
+.button {
+    width: 100%;
+    padding: 5px;
+    font-family: "OpenSansLight";
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0;
+    background-color: #dfda33;
+    border-radius: 4px;
+    border-bottom: #939022 2px solid;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+.button:hover {
+    background-color: #dfda00;
+    font-size: 19px;
+    font-weight: 700;
+    border-bottom: 0;
+    transform: scaleY(1.1);
+}
+
+.form__desc {
+    font-family: "OpenSansLight";
+    font-size: 12px;
+    color: #888888;
+}
+
+.section__title {
+    font-family: "OpenSansLight";
+    font-size: 44px;
+    line-height: 60px;
+    color: #000000;
+    background-color: #fff936;
+    display: inline;
+    margin-left: 15px;
+    box-shadow: 15px 0 0 #fff936, -15px 0 0 #fff936; /* add padding to every line of text */
+    box-decoration-break: clone; /* shadow fix for Firefox */
+}
+
+.tag-cloud__list {
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.tag-cloud__item {
+    color: #345772;
+    display: inline;
+    margin: 0 50px;
+    white-space: nowrap;
+}
+
+.tag-cloud__item:nth-child(even) {
+    vertical-align: sub;
+}
+
+.tag-cloud__list .bold{
+    font-family: "OpenSansBold";
+    font-size: 33px;
+}
+
+.tag-cloud__list .regular {
+    font-family: "OpenSansRegular";
+    font-size: 24px;
+}
+
+.tag-cloud__list .light-big {
+    font-family: "OpenSansLight";
+    font-size: 20px;
+}
+
+.tag-cloud__list .light-small {
+    font-family: "OpenSansLight";
+    font-size: 16px;
+}
+
+.description {
+    background-color: #ccd8de;
+    width: 100%;
+    min-width: 1200px;
+    height: 420px;
+    text-align: center;
+/*    padding-top: 60px;*/
+    margin-bottom: 60px;
+}
+
+.description__item {
+    display: inline-block;
+    width: 272px;
+    height: 360px;
+    padding-top: 60px;
+    vertical-align: top;
+    position: relative;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.description__img {
+    border: 0;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    margin-left: -86px;
+}
+
+.description__text {
+    font-family: "OpenSansLight";
+    font-size: 20px;
+    position: absolute;
+    top: 270px;
+    margin-left: -136px;
+    display: inline-block;
+}
+
+.description__item:nth-child(2) .description__text {
+    margin-left: -70px; /* text-align: center for item-text2 */
+}
+
+.professional__list {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.professional__item {
+    display: inline-block;
+    text-align: center;
+    line-height: 17px;
+    width: 250px;
+    height: 450px;
+    padding-top: 20px;
+    vertical-align: top;
+    margin-left: 20px;
+    transition: 0.2s ease;
+}
+
+.professional__item:first-child {
+    margin-left: 0;
+}
+
+.prof__name {
+    font-family: "OpenSansLight";
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.prof__title {
+    font-family: "OpenSansItalic";
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.prof__quote {
+    font-family: "OpenSansRegular";
+    font-size: 16px;
+}
+
+.prof__img {
+    margin-bottom: 30px;
+}
+
+.footer__form .section__title {
+    margin-left: 0;
+}
+
+.footer-title__wrap {
+    margin-left: 15px;
+    width: 750px;
+    float: left;
+}
+
+.footer-form__wrap {
+    width: 370px;
+    float: right;
+}
+
+.footer__form:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.footer {
+    margin-top: 65px;
+    width: 100%;
+    min-width: 1200px;
+    background-color: #6c7a7d;
+}
+
+.footer-wrap {
+    width: 1145px;
+    margin: auto;
+    height: 49px;
+    line-height: 49px;
+    vertical-align: middle;
+}
+
+.footer__text {
+    font-family: "OpenSansLight";
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.thanx {
+    width: 383px;
+    height: 364px;
+    position: absolute;
+    background-color: #ed174c;
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+/*    display: none;*/
+}
+
+.thanx-header {
+/*    right: 55px;*/
+    right: 9999px;
+    top: 40px;
+}
+.thanx-footer {
+/*    right: 105px;*/
+/*    bottom: 65px;*/
+    right: 9999px;
+    top: 2077px;
+    position: absolute;
+    transform: scale(0.7);
+}
+
+.thanx__title {
+    font-family: "OpenSansExtraBold";
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.thanx__text {
+    font-family: "OpenSansRegular";
+    font-size: 27px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
